@@ -36,49 +36,23 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 3.0,
                       color: Colors.white70),
                 ),
-                Container(
+                Card(
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
                   color: Colors.white,
-                  child: Row(children: [
-                    Icon(
-                      Icons.call,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+880 1722 686817',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          color: Colors.black,
-                          fontSize: 20.0),
-                    )
-                  ]),
+                  child: ListTile(
+                    leading: Icon(Icons.call),
+                    title: Text('+880 1722 686817'),
+                  ),
                 ),
-                Container(
+                Card(
                   margin:
                       EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                  padding: EdgeInsets.all(10.0),
                   color: Colors.white,
-                  child: Row(children: [
-                    Icon(
-                      Icons.mail,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'mail@sharif.live',
-                      style: TextStyle(
-                          fontFamily: 'Source Sans Pro',
-                          color: Colors.black,
-                          fontSize: 20.0),
-                    )
-                  ]),
+                  child: ListTile(
+                    leading: Icon(Icons.mail),
+                    title: Text('mail@sharif.live'),
+                  ),
                 )
               ],
             ),
