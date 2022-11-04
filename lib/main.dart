@@ -31,25 +31,43 @@ class MyApp extends StatelessWidget {
                 'MOBILE APP DEVELOPER',
                 style: TextStyle(
                     fontFamily: 'Source Sans Pro',
-                    fontSize: 25.0,
+                    fontSize: 15.0,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 3.0,
                     color: Colors.white70),
               ),
+              SizedBox(
+                  // height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade200,
+                  )),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                color: Colors.white,
+                // color: Colors.white, //By default Card color property is set to white
                 child: ListTile(
                   leading: Icon(Icons.call),
-                  title: Text('+880 1722 686817'),
+                  title: Text(
+                    '+880 1722 686817',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal),
+                  ),
                 ),
               ),
               Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                color: Colors.white,
+                // color: Colors.white,
                 child: ListTile(
                   leading: Icon(Icons.mail),
-                  title: Text('mail@sharif.live'),
+                  title: Text(
+                    'mail@sharif.live',
+                    style: TextStyle(
+                        fontFamily: 'Source Sans Pro',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.teal),
+                  ),
                 ),
               )
             ],
